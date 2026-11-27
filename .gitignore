@@ -18,3 +18,12 @@ temp/
 Thumbs.db
 .vscode/
 .idea/
+
+# Visual Studio & SSAS Multidimensional build/user artifacts
+.vs/
+[Bb]in/
+[Oo]bj/
+*.user
+*.suo
+*.cache
+*.dwproj.user

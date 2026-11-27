@@ -1,0 +1,193 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="a77d0e42-c954-4348-aadb-4e9e4a9442fc" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Absence DW</ID>
+  <Name>Absence DW</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>Absence DW</DataSourceID>
+  <Schema>
+    <xs:schema id="Absence_x0020_DW" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="Absence_x0020_DW" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="ad8ede6b-d76f-4235-9f65-6b81180e43f2">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_dim_Categorie" msprop:DbTableName="dim_Categorie" msprop:FriendlyName="dim_Categorie" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="5c79055d-d5eb-4d2b-9013-a09b095a7255">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id_categorie" msprop:FriendlyName="id_categorie" msprop:DbColumnName="id_categorie" msprop:design-time-name="6c67b652-dff4-458c-be38-93ada691b538" type="xs:int" />
+                  <xs:element name="nom_cat" msprop:FriendlyName="nom_cat" msprop:DbColumnName="nom_cat" msprop:design-time-name="e25033cf-016f-40bf-ab22-19e9591cdde9">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="description_" msprop:FriendlyName="description_" msprop:DbColumnName="description_" msprop:design-time-name="90ed003a-e99f-48e3-9737-2611db4f2ef7" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_dim_Employee" msprop:DbTableName="dim_Employee" msprop:FriendlyName="dim_Employee" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="67e96549-a4c9-4daa-a014-58f1d02fb8d7">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="code_emp" msprop:FriendlyName="code_emp" msprop:DbColumnName="code_emp" msprop:design-time-name="23512949-4c62-4a19-8861-3f6f06110840" type="xs:int" />
+                  <xs:element name="nom" msprop:FriendlyName="nom" msprop:DbColumnName="nom" msprop:design-time-name="3ebc3b3b-efe0-4cac-9ff4-08df05e5736a">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="prenom" msprop:FriendlyName="prenom" msprop:DbColumnName="prenom" msprop:design-time-name="fd0f04dc-0bdf-445b-b9be-645c8db23c8a">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="service" msprop:FriendlyName="service" msprop:DbColumnName="service" msprop:design-time-name="99c07491-9eef-47a6-b9a1-b50f09592da7">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="ville" msprop:FriendlyName="ville" msprop:DbColumnName="ville" msprop:design-time-name="bf06ea72-a78c-431f-a4d9-d4c63728da9a">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="region" msprop:FriendlyName="region" msprop:DbColumnName="region" msprop:design-time-name="f77d25f3-3381-402d-9c36-656e97629558">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="pays" msprop:FriendlyName="pays" msprop:DbColumnName="pays" msprop:design-time-name="97ac7b28-33e2-4ac2-9d8d-1443233515ba">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_dim_Temps" msprop:DbTableName="dim_Temps" msprop:FriendlyName="dim_Temps" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="34e53d53-2ca6-4027-97ba-48eec7e85e02">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="SK_Temps" msprop:FriendlyName="SK_Temps" msprop:DbColumnName="SK_Temps" msprop:design-time-name="7e846721-3e3e-4de0-8f6e-f8f81a8ca723" type="xs:int" />
+                  <xs:element name="date_complete" msprop:FriendlyName="date_complete" msprop:DbColumnName="date_complete" msprop:design-time-name="82907ee2-3820-4a04-be07-80afb9964580" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="jour" msprop:FriendlyName="jour" msprop:DbColumnName="jour" msprop:design-time-name="e6041c45-bd96-402e-9f9c-fadbab434d7c" type="xs:int" minOccurs="0" />
+                  <xs:element name="mois" msprop:FriendlyName="mois" msprop:DbColumnName="mois" msprop:design-time-name="5b985794-78ad-4b52-9647-47651479cd53" type="xs:int" minOccurs="0" />
+                  <xs:element name="trimestre" msprop:FriendlyName="trimestre" msprop:DbColumnName="trimestre" msprop:design-time-name="148cd228-5fa3-4097-8b08-2ddccb3cd0b1" type="xs:int" minOccurs="0" />
+                  <xs:element name="annee" msprop:FriendlyName="annee" msprop:DbColumnName="annee" msprop:design-time-name="f7877e31-004d-46f1-b328-46b8d604a526" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_fait_Absence" msprop:DbTableName="fait_Absence" msprop:FriendlyName="fait_Absence" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="73bb5f2e-6b94-4530-b54e-73960e963903">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="num_demande" msprop:FriendlyName="num_demande" msprop:DbColumnName="num_demande" msprop:design-time-name="87fe8a96-a704-4094-9d56-b6b1d508873e" type="xs:int" />
+                  <xs:element name="code_emp" msprop:FriendlyName="code_emp" msprop:DbColumnName="code_emp" msprop:design-time-name="175c44f5-8c04-41c5-95b8-989eeb8ad864" type="xs:int" />
+                  <xs:element name="date_demande" msprop:FriendlyName="date_demande" msprop:DbColumnName="date_demande" msprop:design-time-name="5b235772-550c-4c85-8669-26764a2e390e" type="xs:int" />
+                  <xs:element name="date_debut" msprop:FriendlyName="date_debut" msprop:DbColumnName="date_debut" msprop:design-time-name="c30f0be1-48cf-45ee-97ec-ca75fa966a92" type="xs:int" />
+                  <xs:element name="date_fin" msprop:FriendlyName="date_fin" msprop:DbColumnName="date_fin" msprop:design-time-name="458ee3c4-da08-43a3-876d-feb4291a3158" type="xs:int" />
+                  <xs:element name="id_categorie" msprop:FriendlyName="id_categorie" msprop:DbColumnName="id_categorie" msprop:design-time-name="d856124d-d2f8-4bda-b955-0ebb0aea4560" type="xs:int" />
+                  <xs:element name="status_" msprop:FriendlyName="status_" msprop:DbColumnName="status_" msprop:design-time-name="6a774a11-df19-4ccb-869e-878ed4822318">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="nb_jour" msprop:FriendlyName="nb_jour" msprop:DbColumnName="nb_jour" msprop:design-time-name="f44b8fec-b331-47eb-a7c3-c99bc76396ad" type="xs:int" />
+                  <xs:element name="taux_absenteisme" msprop:FriendlyName="taux_absenteisme" msprop:DbColumnName="taux_absenteisme" msprop:design-time-name="f5d28873-8b9d-4fd7-8376-3d3d54cf934e" type="xs:double" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_dim_Categorie" />
+          <xs:field xpath="id_categorie" />
+        </xs:unique>
+        <xs:unique name="dbo_dim_Employee_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_dim_Employee" />
+          <xs:field xpath="code_emp" />
+        </xs:unique>
+        <xs:unique name="dbo_dim_Temps_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_dim_Temps" />
+          <xs:field xpath="SK_Temps" />
+        </xs:unique>
+        <xs:unique name="dbo_fait_Absence_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_fait_Absence" />
+          <xs:field xpath="num_demande" />
+        </xs:unique>
+        <xs:keyref name="FK_fait_Absence_dim_Employee" refer="dbo_dim_Employee_Constraint1">
+          <xs:selector xpath=".//dbo_fait_Absence" />
+          <xs:field xpath="code_emp" />
+        </xs:keyref>
+        <xs:keyref name="FK_fait_Absence_dim_Temps_debut" refer="dbo_dim_Temps_Constraint1">
+          <xs:selector xpath=".//dbo_fait_Absence" />
+          <xs:field xpath="date_debut" />
+        </xs:keyref>
+        <xs:keyref name="FK_fait_Absence_dim_Temps_demande" refer="dbo_dim_Temps_Constraint1">
+          <xs:selector xpath=".//dbo_fait_Absence" />
+          <xs:field xpath="date_demande" />
+        </xs:keyref>
+        <xs:keyref name="FK_fait_Absence_dim_Categorie" refer="Constraint1">
+          <xs:selector xpath=".//dbo_fait_Absence" />
+          <xs:field xpath="id_categorie" />
+        </xs:keyref>
+        <xs:keyref name="FK_fait_Absence_dim_Temps_fin" refer="dbo_dim_Temps_Constraint1">
+          <xs:selector xpath=".//dbo_fait_Absence" />
+          <xs:field xpath="date_fin" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <Absence_x0020_DW xmlns="" />
+  </Schema>
+</DataSourceView>

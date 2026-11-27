@@ -1,0 +1,20 @@
+# Talend Open Studio artifacts & temp files
+.metadata/
+.settings/
+.JETEmitters/
+temp/
+*.tmp
+*.log
+
+# Database backups & local data files
+*.bak
+*.mdf
+*.ldf
+*.sqlite
+*.db
+
+# OS & editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

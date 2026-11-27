@@ -38,7 +38,7 @@ This folder contains the exported Talend Open Studio jobs (`DWH_AbsenceDB_jobs.z
 
 ## Configure Database Connections & Verify Schemas Before Running
 
-Although the exported archive includes metadata/schemas, your collaborator should update and test the SQL Server connection to **`AbsenceDB`** (and **`AbsenceDW`**) on their machine—and re-retrieve schemas only if a component or table schema needs refreshing:
+Although the exported archive includes metadata/schemas, you should update and test the SQL Server connection to **`AbsenceDB`** and **`AbsenceDW`** on your machine, and re-retrieve schemas only if a component or table schema needs refreshing:
 
 1. In **Repository** $\rightarrow$ **Metadata** $\rightarrow$ **Db Connections** (or directly in each job's DB input/output components), update the SQL Server settings to match your local instance:
 
@@ -46,13 +46,11 @@ Although the exported archive includes metadata/schemas, your collaborator shoul
 
    * **Port:** `1433`
 
-   * **Source Database:** `AbsenceDB`
-
-   * **Target Warehouse Database:** `AbsenceDW`
+   * **Database:** `AbsenceDB`
 
    * **Username & Password:** Your local SQL Server credentials
 
-2. Click **Check** / **Test connection** to confirm Talend can connect to `AbsenceDB` and `AbsenceDW`.
+2. Click **Check** / **Test connection** to confirm Talend can connect to `AbsenceDB`, and do the same for `AbsenceDW`.
 
 3. *(Optional / Troubleshooting)* If any input component reports a schema mismatch, right-click the `AbsenceDB` connection in **Metadata** $\rightarrow$ **Db Connections**, select **Retrieve schema**, choose the source tables (`Ville`, `Employee`, `Categorie`, `Demande_Absence`, `Detail_Absence`), and sync them with the job components.
 
